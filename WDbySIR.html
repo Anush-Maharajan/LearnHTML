@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=3.0" />
+    <meta
+      name="description"
+      content="Learn Web Development: HTML, CSS, JavaScript, and more!"
+    />
+    <title>Learn Web Development</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      header {
+        /* background-color: #4caf50; */
+        background: linear-gradient(to left, gold, tomato);
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+      }
+      nav {
+        position: sticky;
+        top: 0; /*Sticks the navbar to the top of the viewport */
+        z-index: 1000; /* Ensures the navbar stays above other elements */
+        background: linear-gradient(90deg, pink, red);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(113, 170, 255, 0.1); /* Adds a subtle shadow for better visibility */
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+      }
+      nav a:hover {
+        background: #e08585;
+        border-radius: 5px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      section h2 {
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+      }
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #4caf50;
+        color: white;
+        position: sticky;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Learn Web Development</h1>
+      <p>Your journey to becoming a developer starts here!</p>
+    </header>
+    <nav>
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a href="#javascript">JavaScript</a>
+      <a href="#advanced">Advanced Topics</a>
+    </nav>
+    <div class="container">
+      <section id="html">
+        <h2>HTML Basics</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>What is HTML?</h3>
+            <p>
+              HTML is the structure of a web page. Learn about tags, elements,
+              and attributes.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Essential Tags</h3>
+            <p>
+              Master tags like "div", "h1", "p"
+
+              <!-- <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>, and
+              <code>&lt;p&gt;</code>. -->
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="css">
+        <h2>CSS Basics</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>What is CSS?</h3>
+            <p>
+              CSS styles your web page. Learn about selectors, properties, and
+              values.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Responsive Design</h3>
+            <p>
+              Make your site look great on all devices with media queries and
+              flexbox.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="javascript">
+        <h2>JavaScript Basics</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>What is JavaScript?</h3>
+            <p>
+              JavaScript adds interactivity to your web page. Start with
+              variables, loops, and functions.
+            </p>
+          </div>
+          <div class="card">
+            <h3>DOM Manipulation</h3>
+            <p>
+              Learn how to select and modify elements on your page dynamically.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="advanced">
+        <h2>Advanced Topics</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Frameworks</h3>
+            <p>
+              Explore React, Angular, or Vue to build advanced applications.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Version Control</h3>
+            <p>Learn Git and GitHub to manage and share your code.</p>
+          </div>
+          <div class="card">
+            <h3>APIs</h3>
+            <p>Understand how to fetch data from APIs using REST or GraphQL.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>
+        &copy; 2024 Learn Web Development | Created with :heart: for beginners.
+      </p>
+    </footer>
+  </body>
+</html>
