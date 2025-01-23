@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAva Script</title>
+</head>
+<body>
+    <button onclick="alert('Hello World')">Click Me</button>
+    <button id = "myBtn">Click Here</button>
+    <button id = "thisBtn">Click This</button>
+    <button id = "name">Name?</button>
+    <script>
+        document.getElementById("myBtn").onclick = function() {
+            let username = prompt("What is your Name?");
+            let choice = confirm("Are you sure you want to continue?");
+            if(choice && username != null) {
+                console.log("You have selected:", username);
+            } else {
+                console.log("You have cancelled the operation");
+            }
+            console.log(username);
+        }
+        
+        document.getElementById("name").onclick = function() {
+            let name = "Saurav";
+            console.log("Name is:", name);
+        }
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
