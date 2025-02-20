@@ -15,3 +15,9 @@ console.log(x > z);
 console.log(x <= z);
 console.log();
 console.log();
+
+const passedMath = mathScore >= passedScore;
+const passedScience = scienceScore >= passedScore;
+const passedOverall = totalScore >= 200;
+
+const isPass = passedMath &&  passedScore
