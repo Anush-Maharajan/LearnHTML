@@ -19,5 +19,9 @@ function calculateFinalPrice(price, membership) {
         discountedPrice -= discountedPrice * 0.05;
     }
 
-    console.log(`Final price after discount: ${discountedPrice.tofixed(2)}`);
+    console.log(`Final price after discount: ${discountedPrice.toFixed(2)}`);
 }
+
+calculateFinalPrice(600, "Gold")
+calculateFinalPrice(400, "Silver")
+calculateFinalPrice(700, "Alex")
