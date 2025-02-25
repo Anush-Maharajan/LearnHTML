@@ -20,4 +20,7 @@ const passedMath = mathScore >= passedScore;
 const passedScience = scienceScore >= passedScore;
 const passedOverall = totalScore >= 200;
 
-const isPass = passedMath &&  passedScore
+const isPass = passedMath &&  passedScience
+
+let isMember = true;
+console.log(isMember? "Discount Applied" : "No Discount")
