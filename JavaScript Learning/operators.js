@@ -22,5 +22,6 @@ const passedOverall = totalScore >= 200;
 
 const isPass = passedMath &&  passedScience
 
+// Terenary Opertor
 let isMember = true;
 console.log(isMember? "Discount Applied" : "No Discount")
